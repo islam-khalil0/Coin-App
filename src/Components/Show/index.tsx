@@ -1,4 +1,3 @@
-import React from 'react'
 import Styles from "./index.module.css"
 import mobileImg from "../../assets/mobileImg.png"
 
