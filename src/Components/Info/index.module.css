@@ -1,0 +1,120 @@
+.Container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.Container h1 {
+  color: #0c0c0c;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "FirsNeueLight";
+  src: url("../../fonts/TTLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Container p {
+  text-align: center;
+  font-family: "FirsNeueLight", sans-serif;
+  width: 85%;
+}
+
+.Container .mutualContent {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Container .grow {
+  animation: grow 0.3s ease forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.Container .colorsList {
+  width: 5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+.Container .QRcode {
+  width: 6rem;
+  height: 5.5rem;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+.Container .colorsList img {
+  width: 2.8rem;
+}
+
+.Container .QRcode img {
+  width: 3.8rem;
+}
+
+.Container .getAppBtn {
+  cursor: pointer;
+  color: #d1512d;
+  background: #f5c7a9;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.Container .scanBtn {
+  cursor: pointer;
+  background: #000;
+  color: #ffff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.Container ul {
+  list-style: none;
+  padding: 0;
+  font-family: "FirsNeueLight", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .Container {
+    margin-top: 1rem;
+  }
+
+  .Container p {
+    width: 100%;
+  }
+}
